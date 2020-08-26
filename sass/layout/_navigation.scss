@@ -1,0 +1,61 @@
+.navigation{
+
+    height: 4.4rem;
+   
+    
+
+    &__checkbox{
+
+    }
+
+    &__button{
+
+    }
+
+    &__background{
+
+    }
+
+    &__nav{
+
+    }
+
+    &__list{
+
+    }
+
+    &__item{
+
+    }
+
+    &__link{
+
+    }
+
+    &__icon{
+         position: relative;
+        &,
+        &::before,
+        &::after{
+            width: 1.8rem;
+            height: 2px;
+            background: #060A24;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after{
+            content: "";
+            position:absolute;
+            left: 0;
+        }
+
+        &::before{
+            top:-.5rem;
+        }
+
+        &::after{
+            top:.5rem;
+        }
+    }
+}

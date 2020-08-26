@@ -1,15 +1,22 @@
 .navigation{
-
-    height: 4.4rem;
-   
-    
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 0;
 
     &__checkbox{
-
+        display: none;
     }
 
     &__button{
-
+        position: fixed; 
+        right: 1rem;
+        
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        text-align:center;
+        
     }
 
     &__background{
@@ -17,26 +24,31 @@
     }
 
     &__nav{
-
+        display: none;
     }
 
     &__list{
-
+        list-style: none;
+        
     }
 
     &__item{
-
+        
     }
 
     &__link{
-
+        text-decoration: none;
     }
 
     &__icon{
          position: relative;
+         top: 50%;
+
+
         &,
         &::before,
         &::after{
+            
             width: 1.8rem;
             height: 2px;
             background: #060A24;

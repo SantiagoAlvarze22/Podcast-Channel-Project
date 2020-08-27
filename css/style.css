@@ -7,29 +7,60 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 0 1.6rem; }
+  box-sizing: border-box; }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; }
+  position: relative; }
   .navigation__checkbox {
     display: none; }
+  .navigation__logo {
+    padding: 1rem 1.6rem; }
   .navigation__button {
     position: fixed;
-    right: 1rem;
+    right: 1.6rem;
     height: 3rem;
     width: 3rem;
     cursor: pointer;
-    text-align: center; }
+    text-align: center;
+    z-index: 100;
+    background-color: khaki; }
+  .navigation__background {
+    position: fixed;
+    top: 4.4rem;
+    height: 0;
+    width: 100%;
+    background-color: #0000EC;
+    padding: 0;
+    transition: all .3s; }
   .navigation__nav {
-    display: none; }
+    visibility: hidden; }
   .navigation__list {
-    list-style: none; }
+    position: absolute;
+    top: 4.4rem;
+    left: 0;
+    list-style: none;
+    font-size: 1.6rem; }
+  .navigation__item {
+    line-height: 2.8rem;
+    padding: .8rem 0 1.2rem 1.6rem; }
+    .navigation__item:first-child {
+      padding: 1.6rem 0 1.2rem 1.6rem; }
   .navigation__link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all .3s; }
+    .navigation__link:link, .navigation__link:visited {
+      display: inline-block;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+      background-size: 230%; }
+    .navigation__link:hover, .navigation__link:active {
+      transform: translateX(1rem);
+      background-position: 100%;
+      color: black;
+      font-weight: 700; }
   .navigation__icon {
     position: relative;
     top: 50%; }
@@ -41,8 +72,26 @@ body {
     .navigation__icon::before, .navigation__icon::after {
       content: "";
       position: absolute;
-      left: 0; }
+      left: 0;
+      transition: all .3s; }
     .navigation__icon::before {
       top: -.5rem; }
     .navigation__icon::after {
       top: .5rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -.7rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: .7rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(-135deg); }
+  .navigation__checkbox:checked ~ .navigation__background {
+    width: 100%;
+    height: 22.4rem; }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    visibility: visible; }

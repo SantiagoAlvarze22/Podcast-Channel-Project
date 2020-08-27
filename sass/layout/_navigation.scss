@@ -2,42 +2,82 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 1rem 0;
+     position: relative;
 
     &__checkbox{
         display: none;
     }
 
+    &__logo{
+        padding: 1rem 1.6rem;
+    }
+
     &__button{
         position: fixed; 
-        right: 1rem;
-        
+        right: 1.6rem;
         height: 3rem;
         width: 3rem;
         cursor: pointer;
         text-align:center;
-        
+        z-index: 100;
+        background-color: khaki;
     }
 
     &__background{
-
+        position: fixed;
+        top: 4.4rem;
+        height: 0;
+        width: 100%;
+        background-color:  $color-primary;
+        padding: 0;
+        transition: all .3s;
     }
 
     &__nav{
-        display: none;
+       visibility: hidden;
     }
 
     &__list{
+        position: absolute;
+        top: 4.4rem;
+        left: 0;
         list-style: none;
+        font-size: 1.6rem;
         
     }
 
     &__item{
+        line-height: 2.8rem;
         
+
+        &:first-child{
+            padding: 1.6rem 0 1.2rem 1.6rem;
+        }
+        padding: .8rem 0 1.2rem 1.6rem;
     }
 
     &__link{
         text-decoration: none;
+        color: #FFFFFF;
+        transition: all .3s;
+
+        &:link,
+        &:visited{
+           display: inline-block;
+           background-image: linear-gradient(120deg,
+                                         transparent 0%, transparent 50%, 
+                                         #fff 50%);
+            background-size: 230%;
+        }
+
+        &:hover,
+        &:active{
+            transform: translateX(1rem);
+            background-position: 100%;
+            color:black;
+            font-weight:700 ;
+        }
+        
     }
 
     &__icon{
@@ -60,6 +100,7 @@
             content: "";
             position:absolute;
             left: 0;
+            transition: all .3s;
         }
 
         &::before{
@@ -69,5 +110,48 @@
         &::after{
             top:.5rem;
         }
+
     }
+
+    
+    &__button:hover &__icon::before{
+        top: -.7rem;
+    }
+
+    &__button:hover &__icon::after{
+        top: .7rem;
+    }
+
+    //conviritiendo en x el menú al darle click
+    &__checkbox:checked + &__button &__icon{
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::after{
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::before{
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    //mostrando menu
+
+    &__checkbox:checked ~ &__background{
+        width: 100%;
+        height: 22.4rem;
+    }
+
+    &__checkbox:checked ~ &__nav{
+        visibility: visible;
+        
+    }
+
+    // &__checkbox:checked .header{
+    //     position: absolute;
+    //     top: -27rem;
+    //     font-size:12rem;
+    // }
 }

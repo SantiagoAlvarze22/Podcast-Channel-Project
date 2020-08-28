@@ -20,7 +20,6 @@
         cursor: pointer;
         text-align:center;
         z-index: 100;
-        background-color: khaki;
     }
 
     &__background{
@@ -35,6 +34,8 @@
 
     &__nav{
        visibility: hidden;
+       opacity: 0;
+       transition: all .3s;
     }
 
     &__list{
@@ -58,7 +59,7 @@
 
     &__link{
         text-decoration: none;
-        color: #FFFFFF;
+        color: $color-white;
         transition: all .3s;
 
         &:link,
@@ -66,7 +67,7 @@
            display: inline-block;
            background-image: linear-gradient(120deg,
                                          transparent 0%, transparent 50%, 
-                                         #fff 50%);
+                                         $color-white 50%);
             background-size: 230%;
         }
 
@@ -146,6 +147,7 @@
 
     &__checkbox:checked ~ &__nav{
         visibility: visible;
+        opacity: 1;
         
     }
 

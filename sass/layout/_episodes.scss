@@ -1,0 +1,12 @@
+.episodes{
+    display: block;
+    padding: 1.6rem;
+    background-image: linear-gradient(180deg, 
+    $color-lg-light 0%, $color-lg-dark 100%);
+    clip-path: polygon( 0 15%,  100% 0, 100% 85%, 0 100% );
+
+    &__heading{
+        padding:3.2rem 0 2.1rem 0;
+        
+    }
+}

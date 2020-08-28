@@ -5,10 +5,7 @@
 
 .heading{
     &__1{
-        font-family:$font-sans;
-        font-size: 3.6rem;
-        font-weight:400 ;
-        line-height: 4.2rem;
+        @include heading-styles;
         color: $color-heading;
     }
 
@@ -35,5 +32,12 @@
         text-decoration: none;
         line-height: 2.2rem;
         color: $color-heading;
+    }
+}
+
+.episodes{
+    &__heading{
+        @include heading-styles;
+        color: $color-white;
     }
 }

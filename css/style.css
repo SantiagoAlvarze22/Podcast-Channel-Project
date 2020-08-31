@@ -47,6 +47,30 @@ body {
   line-height: 4.2rem;
   color: #fff; }
 
+.donde-venimos__text--heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem; }
+
+.invitados-especiales__heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem; }
+
+.nuestros-temas__heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem; }
+
+.nuestros-temas__figure--heading2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.4rem;
+  color: #060A24;
+  font-weight: 600; }
+
 .btn, .btn:link, .btn:visited {
   display: block;
   margin: 2.4rem 0;
@@ -79,11 +103,6 @@ body {
       height: 40rem; }
   .donde-venimos__text {
     margin-top: 2.7rem; }
-    .donde-venimos__text--heading {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-size: 3.6rem;
-      font-weight: 400;
-      line-height: 4.2rem; }
 
 .episodes {
   position: relative;
@@ -113,10 +132,6 @@ body {
   display: inline-block; }
 
 .invitados-especiales__heading {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 4.2rem;
   margin: 2.7rem 1.6rem 1.6rem 1.6rem; }
 
 .invitados-especiales__imagenes--photo {
@@ -209,3 +224,13 @@ body {
   .navigation__checkbox:checked ~ .navigation__nav {
     visibility: visible;
     opacity: 1; }
+
+.nuestros-temas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .nuestros-temas__heading {
+    margin: 2.7rem 1.6rem 1.6rem 1.6rem; }
+  .nuestros-temas__figure {
+    text-align: center;
+    margin-bottom: 4.9rem; }

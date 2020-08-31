@@ -9,15 +9,11 @@
         &--img{
             width: 25rem;
             height: 40rem;
-            
         }
     }
 
     &__text{
         margin-top: 2.7rem;
-        &--heading{
-            @include heading-styles;
-        }
     }
     
 }

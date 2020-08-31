@@ -1,0 +1,25 @@
+.nuestros-temas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    &__heading{
+        margin: 2.7rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    &__tema{
+        
+    }
+
+    &__figure{
+        text-align: center;
+        margin-bottom: 4.9rem;
+        &--img{
+        
+        }
+
+        &--heading{
+
+        }
+    }
+}

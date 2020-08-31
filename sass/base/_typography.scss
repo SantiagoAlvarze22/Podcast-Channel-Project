@@ -73,3 +73,13 @@
         }
     }
 }
+
+.ultimas-novedades{
+    &__container{
+        &--heading{
+            @include heading-styles;
+            text-align: center;
+            color: $color-white;
+        }
+    }
+}

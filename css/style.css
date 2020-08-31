@@ -71,42 +71,54 @@ body {
   color: #060A24;
   font-weight: 600; }
 
-.btn, .btn:link, .btn:visited {
-  display: block;
-  margin: 2.4rem 0;
-  padding: 1.3rem 9.6rem;
-  width: 28.8rem;
-  border-radius: .1rem;
-  cursor: pointer;
-  background-image: linear-gradient(90deg, #00F3BB 0%, #00F3BB 49%, #0000EC 100%);
-  background-size: 58rem;
-  transition: all .3s; }
+.ultimas-novedades__container--heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  text-align: center;
+  color: #fff; }
 
-.btn:active, .btn:focus {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 236, 0.2); }
+.btn {
+  margin: 0 auto; }
+  .btn, .btn:link, .btn:visited {
+    display: inline-block;
+    font-weight: 500;
+    margin: 2.4rem 0;
+    padding: 1.3rem 9.6rem;
+    width: 28.8rem;
+    border-radius: .1rem;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #00F3BB 0%, #00F3BB 49%, #0000EC 100%);
+    background-size: 58rem;
+    transition: all .3s; }
+  .btn:active, .btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 236, 0.2); }
+  .btn:hover {
+    color: #fff;
+    background-position: 29rem;
+    transition: all .3s;
+    transform: translateY(-1px); }
 
-.btn:hover {
-  color: #fff;
-  background-position: 29rem;
-  transition: all .3s;
-  transform: translateY(-1px); }
+a.btn.escucha {
+  padding: 1.3rem 4.3rem;
+  text-align: center; }
 
 .donde-venimos {
-  margin: 2.7rem 1.6rem;
+  margin: 2.7rem 1.6rem 0 1.6rem;
   display: flex;
   flex-direction: column; }
   .donde-venimos__phone {
-    margin: 0 auto; }
+    margin: 0 auto;
+    transform: translateY(-10rem); }
     .donde-venimos__phone--img {
-      width: 25rem;
-      height: 40rem; }
+      width: 27rem;
+      height: 44rem; }
   .donde-venimos__text {
-    margin-top: 2.7rem; }
+    transform: translateY(-4rem); }
 
 .episodes {
-  position: relative;
-  display: block;
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%); }
   .episodes__heading {
@@ -131,8 +143,20 @@ body {
   margin: 1.6rem 0 1.6rem 0;
   display: inline-block; }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0; }
+
+.iconos {
+  width: 100rem; }
+
+.fab {
+  margin: 1.5rem; }
+
 .invitados-especiales__heading {
-  margin: 2.7rem 1.6rem 1.6rem 1.6rem; }
+  margin: 0 1.6rem 1.6rem 1.6rem; }
 
 .invitados-especiales__imagenes--photo {
   width: 100%;
@@ -234,3 +258,16 @@ body {
   .nuestros-temas__figure {
     text-align: center;
     margin-bottom: 4.9rem; }
+
+.ultimas-novedades {
+  background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%); }
+  .ultimas-novedades__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.6rem;
+    padding-bottom: 3rem; }
+    .ultimas-novedades__container--heading {
+      margin: 6.4rem 1.6rem 3.6rem 1.6rem;
+      display: inline-block; }

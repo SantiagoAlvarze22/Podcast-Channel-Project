@@ -2,12 +2,12 @@
     margin: 2.7rem 1.6rem 0 1.6rem;
     display: flex;
     flex-direction: column;
-    
+    transform: translateY(-10rem);
 
     &__phone{
        
         margin: 0 auto;
-        transform: translateY(-10rem);
+        
         
         &--img{
             width: 27rem;
@@ -16,7 +16,7 @@
     }
 
     &__text{
-        transform: translateY(-4rem);
+        transform: translateY(5rem);
     }
     
 }

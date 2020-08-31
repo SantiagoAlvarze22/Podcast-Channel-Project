@@ -1,8 +1,8 @@
 .navigation{
      display: flex;
      justify-content: space-between;
-     align-items: center;
-     position: relative;
+     
+     
 
     &__checkbox{
         display: none;
@@ -13,17 +13,19 @@
     }
 
     &__button{
-        position: fixed; 
-        right: 1.6rem;
+        justify-self: flex-end;
+        margin-left: auto;
+        align-self: center;
+        right: 0;
         height: 3rem;
         width: 3rem;
         cursor: pointer;
-        text-align:center;
-        z-index: 100;
+        
+        
     }
 
     &__background{
-        position: fixed;
+        position: absolute;
         top: 4.4rem;
         height: 0;
         width: 100%;
@@ -93,7 +95,7 @@
             width: 1.8rem;
             height: 2px;
             background: #060A24;
-            display: inline-block;
+            display: block;
         }
 
         &::before,

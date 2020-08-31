@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -45,6 +47,9 @@ body {
   line-height: 4.2rem;
   color: #fff; }
 
+.phone__img {
+  width: 100%; }
+
 .btn, .btn:link, .btn:visited {
   display: block;
   margin: 2.4rem 0;
@@ -68,11 +73,19 @@ body {
 
 .episodes {
   display: block;
-  padding: 1.6rem;
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); }
+  clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%); }
   .episodes__heading {
-    padding: 3.2rem 0 2.1rem 0; }
+    padding: 3.2rem 0 2.1rem 1.6rem; }
+  .episodes__container {
+    width: 100%; }
+  .episodes__episode {
+    padding: 0 1.6rem; }
+    .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
+      width: 100%;
+      height: 22.5rem; }
+    .episodes__episode--4 {
+      margin-bottom: 15rem; }
 
 .header {
   margin: 1.6rem; }
@@ -86,23 +99,21 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative; }
+  justify-content: space-between; }
   .navigation__checkbox {
     display: none; }
   .navigation__logo {
     padding: 1rem 1.6rem; }
   .navigation__button {
-    position: fixed;
-    right: 1.6rem;
+    justify-self: flex-end;
+    margin-left: auto;
+    align-self: center;
+    right: 0;
     height: 3rem;
     width: 3rem;
-    cursor: pointer;
-    text-align: center;
-    z-index: 100; }
+    cursor: pointer; }
   .navigation__background {
-    position: fixed;
+    position: absolute;
     top: 4.4rem;
     height: 0;
     width: 100%;
@@ -144,7 +155,7 @@ body {
       width: 1.8rem;
       height: 2px;
       background: #060A24;
-      display: inline-block; }
+      display: block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
       position: absolute;

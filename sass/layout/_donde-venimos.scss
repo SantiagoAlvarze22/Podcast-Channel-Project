@@ -1,0 +1,23 @@
+.donde-venimos{
+    margin: 2.7rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &__phone{
+        margin: 0 auto;
+    
+        &--img{
+            width: 25rem;
+            height: 40rem;
+            
+        }
+    }
+
+    &__text{
+        margin-top: 2.7rem;
+        &--heading{
+            @include heading-styles;
+        }
+    }
+    
+}

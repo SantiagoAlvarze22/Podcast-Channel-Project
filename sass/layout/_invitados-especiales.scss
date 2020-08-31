@@ -1,0 +1,16 @@
+.invitados-especiales{
+  
+    &__heading{
+        @include heading-styles;
+        margin: 2.7rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    &__imagenes{
+        
+       &--photo{
+           width: 100%;
+          display: block;
+       }
+
+    }
+}

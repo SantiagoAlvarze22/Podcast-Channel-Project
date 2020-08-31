@@ -47,9 +47,6 @@ body {
   line-height: 4.2rem;
   color: #fff; }
 
-.phone__img {
-  width: 100%; }
-
 .btn, .btn:link, .btn:visited {
   display: block;
   margin: 2.4rem 0;
@@ -71,7 +68,25 @@ body {
   transition: all .3s;
   transform: translateY(-1px); }
 
+.donde-venimos {
+  margin: 2.7rem 1.6rem;
+  display: flex;
+  flex-direction: column; }
+  .donde-venimos__phone {
+    margin: 0 auto; }
+    .donde-venimos__phone--img {
+      width: 25rem;
+      height: 40rem; }
+  .donde-venimos__text {
+    margin-top: 2.7rem; }
+    .donde-venimos__text--heading {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 3.6rem;
+      font-weight: 400;
+      line-height: 4.2rem; }
+
 .episodes {
+  position: relative;
   display: block;
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%); }
@@ -96,6 +111,17 @@ body {
 .paragraph {
   margin: 1.6rem 0 1.6rem 0;
   display: inline-block; }
+
+.invitados-especiales__heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  margin: 2.7rem 1.6rem 1.6rem 1.6rem; }
+
+.invitados-especiales__imagenes--photo {
+  width: 100%;
+  display: block; }
 
 .navigation {
   display: flex;

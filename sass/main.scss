@@ -7,13 +7,15 @@
 @import "base/typography";
 @import "base/utilities.scss";
 
-@import "components/phone";
 @import "components/buttons";
 
+@import "layout/donde-venimos";
 @import "layout/episodes";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/navigation";   
+@import "layout/invitados-especiales";  
+@import "layout/navigation";  
+
 
 @import "pages/home";
 

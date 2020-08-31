@@ -2,8 +2,6 @@
      display: flex;
      justify-content: space-between;
      
-     
-
     &__checkbox{
         display: none;
     }
@@ -19,9 +17,7 @@
         right: 0;
         height: 3rem;
         width: 3rem;
-        cursor: pointer;
-        
-        
+        cursor: pointer; 
     }
 
     &__background{
@@ -52,7 +48,6 @@
     &__item{
         line-height: 2.8rem;
         
-
         &:first-child{
             padding: 1.6rem 0 1.2rem 1.6rem;
         }
@@ -86,7 +81,6 @@
     &__icon{
          position: relative;
          top: 50%;
-
 
         &,
         &::before,

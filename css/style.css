@@ -130,7 +130,7 @@ a.btn.escucha {
     padding: 0 1.6rem; }
     .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
       width: 100%;
-      height: 22.5rem; }
+      height: 16rem; }
     .episodes__episode--4 {
       margin-bottom: 15rem; }
 
@@ -154,14 +154,17 @@ a.btn.escucha {
   width: 100rem; }
 
 .fab {
-  margin: 1.5rem; }
+  margin: 1.5rem;
+  cursor: pointer; }
 
 .invitados-especiales__heading {
   margin: 0 1.6rem 1.6rem 1.6rem; }
 
-.invitados-especiales__imagenes--photo {
-  width: 100%;
-  display: block; }
+.invitados-especiales__imagenes {
+  cursor: pointer; }
+  .invitados-especiales__imagenes--photo {
+    width: 100%;
+    display: block; }
 
 .navigation {
   display: flex;

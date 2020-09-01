@@ -232,13 +232,16 @@ a.btn.conoce {
       display: flex;
       flex-direction: row;
       justify-content: space-around; } }
-
-.iconos {
-  width: 100rem; }
+  .footer__iconos--link, .footer__iconos--link:link, .footer__iconos--link:visited {
+    color: #00F3BB; }
+  .footer__iconos--link:active, .footer__iconos--link:focus {
+    color: black; }
 
 .fab {
   margin: 1.5rem;
-  cursor: pointer; }
+  transition: all .3s; }
+  .fab:hover {
+    transform: scale(1.5); }
 
 @media only screen and (min-width: 37.5em) {
   .invitados-especiales {
@@ -429,7 +432,7 @@ a.btn.conoce {
     @media only screen and (min-width: 56.25em) {
       .nuestros-temas__figure--heading2 {
         display: block;
-        font-size: 1.6rem;
+        font-size: 2.4rem;
         margin-top: 2rem; } }
 
 .ultimas-novedades {

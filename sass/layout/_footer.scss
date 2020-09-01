@@ -14,14 +14,34 @@
         flex-direction: row;
         justify-content: space-around;
     }  
-    
-}
 
-.iconos{
-    width: 100rem;
+    &__iconos{
+
+        &--link{
+            
+            &,
+            &:link, 
+            &:visited{
+                color:$color-button;
+            }
+
+            &:active,
+            &:focus{
+                color: black;
+            }
+            
+            
+            
+        }
+    
+    }
+    
 }
 
 .fab{
     margin: 1.5rem;
-    cursor: pointer;
+    transition: all .3s;;
+    &:hover{
+        transform: scale(1.5);
+    }
 }

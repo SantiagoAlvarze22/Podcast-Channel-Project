@@ -2,24 +2,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
-    &__heading{
-        margin: 2.7rem 1.6rem 1.6rem 1.6rem;
+    &__container{
+        @media only screen and (min-width: $bp-medium){
+            display: flex;
+            justify-content: center;
+        }  
     }
 
     &__tema{
-        
+        @media only screen and (min-width: $bp-medium){
+            margin: 2rem;
+        }  
+    }
+    &__heading{
+        margin: 2.7rem 1.6rem 1.6rem 1.6rem;
+        @media only screen and (min-width: $bp-largest){
+          align-self: flex-start;
+          margin-left: 20rem;
+        }  
     }
 
     &__figure{
         text-align: center;
         margin-bottom: 4.9rem;
-        &--img{
-        
-        }
 
-        &--heading{
 
+        &--heading2{
+            @media only screen and (min-width: $bp-medium){
+                display:block;
+                font-size:1.6rem;
+                margin-top:2rem ;
+            }  
         }
     }
 }

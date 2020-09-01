@@ -1,6 +1,10 @@
 .navigation{
      display: flex;
      justify-content: space-between;
+
+     @media only screen and (min-width: $bp-largest){
+        margin: 0 10rem ;
+     }
      
     &__checkbox{
         display: none;

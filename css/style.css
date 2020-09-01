@@ -130,27 +130,50 @@ a.btn.conoce {
   @media only screen and (min-width: 37.5em) {
     .donde-venimos {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 50% 50%; } }
+  @media only screen and (min-width: 37.5em) {
+    .donde-venimos {
+      margin: 0 3rem; } }
   .donde-venimos__phone {
     margin: 0 auto; }
     .donde-venimos__phone--img {
       width: 27rem;
       height: 44rem; }
+      @media only screen and (min-width: 56.25em) {
+        .donde-venimos__phone--img {
+          width: 30rem;
+          height: 55rem; } }
   .donde-venimos__text {
-    transform: translateY(5rem); }
+    transform: translateY(5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem; }
     @media only screen and (min-width: 37.5em) {
       .donde-venimos__text {
         transform: translateY(9rem); } }
+    @media only screen and (min-width: 56.25em) {
+      .donde-venimos__text {
+        width: 60%; } }
+    @media only screen and (min-width: 75em) {
+      .donde-venimos__text {
+        width: 60%; } }
 
 .episodes {
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
-  clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%); }
+  clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+  padding-bottom: 10rem;
+  margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .episodes {
       padding-top: 4rem;
       clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
   .episodes__heading {
     padding: 3.2rem 0 2.1rem 1.6rem; }
+    @media only screen and (min-width: 75em) {
+      .episodes__heading {
+        margin-left: 20rem;
+        padding-top: 10rem; } }
   .episodes__container {
     width: 100%; }
     @media only screen and (min-width: 37.5em) {
@@ -162,15 +185,19 @@ a.btn.conoce {
     padding: 0 1.6rem; }
     @media only screen and (min-width: 37.5em) {
       .episodes__episode {
-        padding: 1.6rem; } }
+        margin-bottom: 3rem; } }
+    @media only screen and (min-width: 75em) {
+      .episodes__episode {
+        text-align: center; } }
     .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
       width: 100%;
       height: 16rem; }
       @media only screen and (min-width: 37.5em) {
         .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
           height: 20rem; } }
-    .episodes__episode--4 {
-      margin-bottom: 10rem; }
+      @media only screen and (min-width: 75em) {
+        .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
+          width: 90%; } }
 
 .header {
   margin: 1.6rem; }
@@ -178,6 +205,9 @@ a.btn.conoce {
     .header {
       display: flex;
       flex-direction: column; } }
+  @media only screen and (min-width: 75em) {
+    .header {
+      margin: 3rem 20rem; } }
 
 .heading__1 {
   width: 80%; }
@@ -194,6 +224,11 @@ a.btn.conoce {
   .footer__paragraph {
     margin: 1.6rem 0 1.6rem 0;
     display: inline-block; }
+  @media only screen and (min-width: 56.25em) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; } }
 
 .iconos {
   width: 100rem; }
@@ -208,6 +243,9 @@ a.btn.conoce {
 
 .invitados-especiales__heading {
   margin: 0 1.6rem 1.6rem 1.6rem; }
+  @media only screen and (min-width: 75em) {
+    .invitados-especiales__heading {
+      margin-left: 20rem; } }
 
 .invitados-especiales__imagenes {
   cursor: pointer; }
@@ -216,6 +254,11 @@ a.btn.conoce {
       display: grid;
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(3, 1fr); } }
+  @media only screen and (min-width: 56.25em) {
+    .invitados-especiales__imagenes {
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      grid-template-rows: repeat(2, 1fr); } }
   .invitados-especiales__imagenes--photo {
     width: 100%;
     display: block; }
@@ -223,6 +266,9 @@ a.btn.conoce {
 .navigation {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (min-width: 75em) {
+    .navigation {
+      margin: 0 10rem; } }
   .navigation__checkbox {
     display: none; }
   .navigation__logo {
@@ -361,18 +407,35 @@ a.btn.conoce {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (min-width: 56.25em) {
+    .nuestros-temas__container {
+      display: flex;
+      justify-content: center; } }
+  @media only screen and (min-width: 56.25em) {
+    .nuestros-temas__tema {
+      margin: 2rem; } }
   .nuestros-temas__heading {
     margin: 2.7rem 1.6rem 1.6rem 1.6rem; }
+    @media only screen and (min-width: 75em) {
+      .nuestros-temas__heading {
+        align-self: flex-start;
+        margin-left: 20rem; } }
   .nuestros-temas__figure {
     text-align: center;
     margin-bottom: 4.9rem; }
+    @media only screen and (min-width: 56.25em) {
+      .nuestros-temas__figure--heading2 {
+        display: block;
+        font-size: 1.6rem;
+        margin-top: 2rem; } }
 
 .ultimas-novedades {
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%); }
   @media only screen and (min-width: 37.5em) {
     .ultimas-novedades {
-      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); } }
+      clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+      padding-top: 10rem; } }
   .ultimas-novedades__container {
     display: flex;
     flex-direction: column;

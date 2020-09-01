@@ -4,7 +4,8 @@
     clip-path: polygon( 0 7%,  100% 0, 100% 100%, 0 100% );
 
     @media only screen and (min-width: $bp-small){
-        clip-path: polygon( 0 20%,  100% 0, 100% 100%, 0 100% );
+        clip-path: polygon( 0 30%,  100% 0, 100% 100%, 0 100% );
+        padding-top: 10rem;
     }
     &__container{
         display: flex;

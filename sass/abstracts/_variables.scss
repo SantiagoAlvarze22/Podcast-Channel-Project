@@ -2,6 +2,7 @@ $color-primary:#0000EC;
 $color-white:#fff;
 $color-heading:#060A24;
 $color-button:#00F3BB;
+$color-active:#060A24;
 
 //linear gradient colors
 $color-lg-light:#0000FF;
@@ -9,3 +10,10 @@ $color-lg-dark:#0000A3;
 
 $font-mono:'IBM Plex Mono', monospace;
 $font-sans:'IBM Plex Sans', sans-serif;
+
+//Responsive breakpoints
+
+$bp-largest:75em; //1200px / 16px default fontsize
+$bp-large:62.5em; //1000px
+$bp-medium:50em; //800px
+$bp-small:37.5em; //600px

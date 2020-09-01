@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -32,14 +35,26 @@ body {
   color: #060A24;
   letter-spacing: 0;
   line-height: 2.2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .paragraph {
+      font-size: 1.2rem; } }
+
+.footer__paragraph {
+  font-size: 1.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 2.2rem; }
 
 .btn, .btn:link, .btn:visited {
+  font-size: 1.4rem;
   font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 2.2rem;
   font-weight: 500;
   font-size: 1.6rem;
-  text-decoration: none;
-  line-height: 2.2rem;
-  color: #060A24; }
+  text-decoration: none; }
 
 .episodes__heading {
   font-family: "IBM Plex Sans", sans-serif;
@@ -102,7 +117,8 @@ body {
     transition: all .3s;
     transform: translateY(-1px); }
 
-a.btn.escucha {
+a.btn.escucha,
+a.btn.conoce {
   padding: 1.3rem 4.3rem;
   text-align: center; }
 
@@ -111,6 +127,10 @@ a.btn.escucha {
   display: flex;
   flex-direction: column;
   transform: translateY(-10rem); }
+  @media only screen and (min-width: 37.5em) {
+    .donde-venimos {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
   .donde-venimos__phone {
     margin: 0 auto; }
     .donde-venimos__phone--img {
@@ -118,24 +138,46 @@ a.btn.escucha {
       height: 44rem; }
   .donde-venimos__text {
     transform: translateY(5rem); }
+    @media only screen and (min-width: 37.5em) {
+      .donde-venimos__text {
+        transform: translateY(9rem); } }
 
 .episodes {
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%); }
+  @media only screen and (min-width: 37.5em) {
+    .episodes {
+      padding-top: 4rem;
+      clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
   .episodes__heading {
     padding: 3.2rem 0 2.1rem 1.6rem; }
   .episodes__container {
     width: 100%; }
+    @media only screen and (min-width: 37.5em) {
+      .episodes__container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%); } }
   .episodes__episode {
     padding: 0 1.6rem; }
+    @media only screen and (min-width: 37.5em) {
+      .episodes__episode {
+        padding: 1.6rem; } }
     .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
       width: 100%;
       height: 16rem; }
+      @media only screen and (min-width: 37.5em) {
+        .episodes__episode--1, .episodes__episode--2, .episodes__episode--3, .episodes__episode--4 {
+          height: 20rem; } }
     .episodes__episode--4 {
-      margin-bottom: 15rem; }
+      margin-bottom: 10rem; }
 
 .header {
   margin: 1.6rem; }
+  @media only screen and (min-width: 37.5em) {
+    .header {
+      display: flex;
+      flex-direction: column; } }
 
 .heading__1 {
   width: 80%; }
@@ -149,6 +191,9 @@ a.btn.escucha {
   flex-direction: column;
   align-items: center;
   margin: 2rem 0; }
+  .footer__paragraph {
+    margin: 1.6rem 0 1.6rem 0;
+    display: inline-block; }
 
 .iconos {
   width: 100rem; }
@@ -157,11 +202,20 @@ a.btn.escucha {
   margin: 1.5rem;
   cursor: pointer; }
 
+@media only screen and (min-width: 37.5em) {
+  .invitados-especiales {
+    transform: translateY(-5rem); } }
+
 .invitados-especiales__heading {
   margin: 0 1.6rem 1.6rem 1.6rem; }
 
 .invitados-especiales__imagenes {
   cursor: pointer; }
+  @media only screen and (min-width: 37.5em) {
+    .invitados-especiales__imagenes {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 1fr); } }
   .invitados-especiales__imagenes--photo {
     width: 100%;
     display: block; }
@@ -174,6 +228,7 @@ a.btn.escucha {
   .navigation__logo {
     padding: 1rem 1.6rem; }
   .navigation__button {
+    margin: 1rem 1.6rem;
     justify-self: flex-end;
     margin-left: auto;
     align-self: center;
@@ -181,6 +236,9 @@ a.btn.escucha {
     height: 3rem;
     width: 3rem;
     cursor: pointer; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__button {
+        display: none; } }
   .navigation__background {
     position: absolute;
     top: 4.4rem;
@@ -189,21 +247,40 @@ a.btn.escucha {
     background-color: #0000EC;
     padding: 0;
     transition: all .3s; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__background {
+        visibility: hidden; } }
   .navigation__nav {
     visibility: hidden;
     opacity: 0;
     transition: all .3s; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__nav {
+        opacity: 1;
+        visibility: visible;
+        margin-right: 1rem; } }
   .navigation__list {
     position: absolute;
     top: 4.4rem;
     left: 0;
     list-style: none;
     font-size: 1.6rem; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__list {
+        position: relative;
+        top: 0;
+        display: flex; } }
   .navigation__item {
     line-height: 2.8rem;
     padding: .8rem 0 1.2rem 1.6rem; }
     .navigation__item:first-child {
       padding: 1.6rem 0 1.2rem 1.6rem; }
+      @media only screen and (min-width: 37.5em) {
+        .navigation__item:first-child {
+          padding: .8rem; } }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__item {
+        margin: 1.6rem 1rem; } }
   .navigation__link {
     text-decoration: none;
     color: #fff;
@@ -217,6 +294,24 @@ a.btn.escucha {
       background-position: 100%;
       color: black;
       font-weight: 700; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__link {
+        color: #060A24;
+        font-family: "IBM Plex Mono", monospace; }
+        .navigation__link:link, .navigation__link:visited {
+          display: inline-block; }
+        .navigation__link:hover {
+          transform: translateX(1rem);
+          background-position: 100%;
+          color: #00F3BB;
+          text-decoration: line-through;
+          font-weight: 500; }
+        .navigation__link:active {
+          transform: translateX(1rem);
+          background-position: 100%;
+          color: rgba(6, 10, 36, 0.56);
+          text-decoration: line-through;
+          font-weight: 400; } }
   .navigation__icon {
     position: relative;
     top: 50%; }
@@ -240,12 +335,21 @@ a.btn.escucha {
     top: .7rem; }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__checkbox:checked + .navigation__button .navigation__icon {
+        display: none; } }
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(135deg); }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+        display: none; } }
   .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
     top: 0;
     transform: rotate(-135deg); }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+        display: none; } }
   .navigation__checkbox:checked ~ .navigation__background {
     width: 100%;
     height: 22.4rem; }
@@ -266,6 +370,9 @@ a.btn.escucha {
 .ultimas-novedades {
   background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%); }
+  @media only screen and (min-width: 37.5em) {
+    .ultimas-novedades {
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); } }
   .ultimas-novedades__container {
     display: flex;
     flex-direction: column;

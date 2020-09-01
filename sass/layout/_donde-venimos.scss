@@ -4,6 +4,12 @@
     flex-direction: column;
     transform: translateY(-10rem);
 
+    @media only screen and (min-width: $bp-small){
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+
     &__phone{
        
         margin: 0 auto;
@@ -17,6 +23,12 @@
 
     &__text{
         transform: translateY(5rem);
+        @media only screen and (min-width: $bp-small){
+            transform: translateY(9rem);
+            
+        }
     }
+
+    
     
 }

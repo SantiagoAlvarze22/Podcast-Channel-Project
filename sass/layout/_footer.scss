@@ -20,14 +20,14 @@
         &--link{
             
             &,
-            &:link, 
+            &:link,
             &:visited{
-                color:$color-button;
+                color:$color-active;
             }
 
             &:active,
             &:focus{
-                color: black;
+                color: $color-primary;
             }
             
             

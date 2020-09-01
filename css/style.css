@@ -233,9 +233,9 @@ a.btn.conoce {
       flex-direction: row;
       justify-content: space-around; } }
   .footer__iconos--link, .footer__iconos--link:link, .footer__iconos--link:visited {
-    color: #00F3BB; }
+    color: #060A24; }
   .footer__iconos--link:active, .footer__iconos--link:focus {
-    color: black; }
+    color: #0000EC; }
 
 .fab {
   margin: 1.5rem;
